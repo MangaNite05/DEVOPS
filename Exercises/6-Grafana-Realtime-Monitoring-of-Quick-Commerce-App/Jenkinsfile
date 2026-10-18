@@ -1,0 +1,24 @@
+pipeline {
+    agent any
+    stages {
+        stage('Pre-check Docker') {
+            steps {
+                sh 'docker --version'
+                sh 'docker info > /dev/null'
+            }
+        }
+        stage('Build Docker Image') {
+            steps {
+                dir('Exercises/6-Grafana-Realtime-Monitoring-of-Quick-Commerce-App') {
+                    sh 'docker build -t delivery_metrics .'
+                }
+            }
+        }
+        stage('Run Application') {
+            steps {
+                sh 'docker rm -f delivery_metrics || true'
+                sh 'docker run -d -p 8000:8000 --name delivery_metrics delivery_metrics'
+            }
+        }
+    }
+}

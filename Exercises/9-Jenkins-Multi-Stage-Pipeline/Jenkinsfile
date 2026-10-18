@@ -1,0 +1,66 @@
+pipeline {
+    agent any
+
+    environment {
+        APP_DIR = 'Exercises/9-Jenkins-Multi-Stage-Pipeline'
+    }
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Checking Python and dependencies...'
+                dir("${APP_DIR}") {
+                    sh 'python3 --version'
+                    sh 'python3 -c "import flask; print(flask.__version__)"'
+                }
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Running tests...'
+                dir("${APP_DIR}") {
+                    sh 'python3 -m unittest discover -s .'
+                }
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying application...'
+                dir("${APP_DIR}") {
+                    sh '''
+                    mkdir -p python-app-deploy
+                    cp app.py python-app-deploy/
+                    '''
+                }
+            }
+        }
+        stage('Run Application') {
+            steps {
+                echo 'Running application...'
+                dir("${APP_DIR}") {
+                    sh '''
+                    nohup python3 python-app-deploy/app.py > python-app-deploy/app.log 2>&1 &
+                    echo $! > python-app-deploy/app.pid
+                    '''
+                }
+            }
+        }
+        stage('Test Application') {
+            steps {
+                echo 'Testing application...'
+                dir("${APP_DIR}") {
+                    sh 'python3 test_app.py'
+                }
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'Pipeline completed successfully!'
+        }
+        failure {
+            echo 'Pipeline failed. Check the logs for more details.'
+        }
+    }
+}

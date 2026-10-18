@@ -29,15 +29,15 @@ Exercises/
 | Module # | Exercise Name | Core Technical Focus | Implementation Status |
 | :---: | :--- | :--- | :---: |
 | **01** | [Kubernetes Getting Started](./Exercises/1-Kubernetes-Getting-Started) | Cluster initialization, Pod deployment, and NodePort routing | `COMPLETED` |
-| **02** | [Minikube, kubectl & Flask](./Exercises/2-Minikube-Kubectl-Flask) | Declarative deployments, container runtime, and microservices | `PENDING` |
-| **03** | [Flask Scaling via ReplicaSets](./Exercises/3-Minikube-Scaling-Flask-App-with-Replicasets) | High availability, Pod replication, and fault recovery | `PENDING` |
-| **04** | [Docker Network Topologies](./Exercises/4-Docker-Networking) | User-defined bridge drivers, DNS resolution, and isolation | `PENDING` |
-| **05** | [Container Hardening via AppArmor](./Exercises/5-Docker-Security-AppArmor) | Least privilege enforcement, security profiles, Python SDK | `PENDING` |
-| **06** | [Real-Time Monitoring with Grafana](./Exercises/6-Grafana-Realtime-Monitoring-of-Quick-Commerce-App) | Prometheus time-series scraping, alert thresholds, dashboards | `PENDING` |
-| **07** | [Automated CI Pipelines with Jenkins](./Exercises/7-Jenkins-CI-Automation) | Containerized Jenkins master, polling, build webhooks | `PENDING` |
-| **08** | [Jenkins Freestyle Workflows](./Exercises/8-Jenkins-Hello-World-Job) | Build tasks, shell triggers, build history & artifacts | `PENDING` |
-| **09** | [Multi-Stage Enterprise CI Pipelines](./Exercises/9-Jenkins-Multi-Stage-Pipeline) | Declarative Jenkinsfile, automated testing with pytest, staging | `PENDING` |
-| **10** | [Multi-Node Microservices Topology](./Exercises/10-Minikube-Multi-Node-Multi-App-Minikube-Deployment) | Cluster topologies, inter-service communication, ingress routing | `PENDING` |
+| **02** | [Minikube, kubectl & Flask](./Exercises/2-Minikube-Kubectl-Flask) | Declarative deployments, container runtime, and microservices | `COMPLETED` |
+| **03** | [Flask Scaling via ReplicaSets](./Exercises/3-Minikube-Scaling-Flask-App-with-Replicasets) | High availability, Pod replication, and fault recovery | `COMPLETED` |
+| **04** | [Docker Network Topologies](./Exercises/4-Docker-Networking) | User-defined bridge drivers, DNS resolution, and isolation | `COMPLETED` |
+| **05** | [Container Hardening via AppArmor](./Exercises/5-Docker-Security-AppArmor) | Least privilege enforcement, security profiles, Python SDK | `COMPLETED` |
+| **06** | [Real-Time Monitoring with Grafana](./Exercises/6-Grafana-Realtime-Monitoring-of-Quick-Commerce-App) | Prometheus time-series scraping, alert thresholds, dashboards | `COMPLETED` |
+| **07** | [Automated CI Pipelines with Jenkins](./Exercises/7-Jenkins-CI-Automation) | Containerized Jenkins master, polling, build webhooks | `COMPLETED` |
+| **08** | [Jenkins Freestyle Workflows](./Exercises/8-Jenkins-Hello-World-Job) | Build tasks, shell triggers, build history & artifacts | `COMPLETED` |
+| **09** | [Multi-Stage Enterprise CI Pipelines](./Exercises/9-Jenkins-Multi-Stage-Pipeline) | Declarative Jenkinsfile, automated testing with pytest, staging | `COMPLETED` |
+| **10** | [Multi-Node Microservices Topology](./Exercises/10-Minikube-Multi-Node-Multi-App-Minikube-Deployment) | Cluster topologies, inter-service communication, ingress routing | `COMPLETED` |
 
 ---
 
