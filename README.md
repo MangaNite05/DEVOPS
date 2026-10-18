@@ -1,81 +1,60 @@
-# DevOps Lab
+# DevOps Engineering Laboratory Workspace
 
-This repository contains my implementations and documentation for the **DevOps Lab exercises** completed as part of my coursework.
+Welcome to my DevOps laboratory repository. This workspace contains comprehensive implementations, deployment manifests, automated pipelines, monitoring dashboards, and verification records for key DevOps competencies.
 
-The exercises cover Kubernetes and Minikube, Docker networking and security, monitoring with Grafana, and CI/CD with Jenkins. Each exercise is documented separately with the commands, configurations, implementation details, verification steps, and screenshots of successful execution.
+---
 
-## Repository Purpose
+## Portfolio Architecture & Directory Structure
 
-The purpose of this repository is to maintain a record of the practical work completed throughout the DevOps Lab.
-
-For each exercise, I document:
-
-* The objective of the exercise
-* Tools and technologies used
-* Commands or configurations implemented
-* Important implementation steps
-* Verification of the expected result
-* Screenshots/evidence of successful execution
-* Final outcome
-
-The repository serves as both a **record of completed coursework** and a reference for the concepts and tools used during the lab.
-
-## Exercises
-
-All exercises are maintained inside the [`Exercises`](./Exercises) directory. Each exercise has its own folder containing a `README.md` and its screenshots.
+All modular laboratory exercises are organized in dedicated directories under [`Exercises/`](./Exercises):
 
 ```text
 Exercises/
-├── 1-Kubernetes-Getting-Started/
-├── 2-Minikube-Kubectl-Flask/
-├── 3-Minikube-Scaling-Flask-App-with-Replicasets/
-├── 4-Docker-Networking/
-├── 5-Docker-Security-AppArmor/
-├── 6-Grafana-Realtime-Monitoring-of-Quick-Commerce-App/
-├── 7-Jenkins-CI-Automation/
-├── 8-Jenkins-Hello-World-Job/
-├── 9-Jenkins-Multi-Stage-Pipeline/
-└── 10-Minikube-Multi-Node-Multi-App-Minikube-Deployment/
+├── 1-Kubernetes-Getting-Started/                                # K8s Pod initialization, NodePort exposure & cluster verification
+├── 2-Minikube-Kubectl-Flask/                                    # Containerized Flask microservice deployment via declarative YAML
+├── 3-Minikube-Scaling-Flask-App-with-Replicasets/               # Workload horizontal scaling & self-healing ReplicaSets
+├── 4-Docker-Networking/                                         # Isolated bridge networks & multi-container service discovery
+├── 5-Docker-Security-AppArmor/                                  # Linux security kernel enforcement & Docker AppArmor profiling
+├── 6-Grafana-Realtime-Monitoring-of-Quick-Commerce-App/         # Prometheus metrics scraping & real-time Grafana observability
+├── 7-Jenkins-CI-Automation/                                     # Automated continuous integration builds and Git webhook triggers
+├── 8-Jenkins-Hello-World-Job/                                   # Declarative freestyle jobs and artifact archiving
+├── 9-Jenkins-Multi-Stage-Pipeline/                              # Multi-stage CI pipeline with unit testing and deployment gates
+└── 10-Minikube-Multi-Node-Multi-App-Minikube-Deployment/        # Multi-node microservices architecture (Catalog & Cart services)
 ```
 
-## Progress
+---
 
-| #  | Exercise | Focus Area | Status |
-| -- | -------- | ---------- | ------ |
-| 1  | [Kubernetes Getting Started](./Exercises/1-Kubernetes-Getting-Started) | Kubernetes fundamentals | Completed |
-| 2  | [Minikube, kubectl & Flask](./Exercises/2-Minikube-Kubectl-Flask) | Deploying a Flask app on Minikube using kubectl | Pending |
-| 3  | [Scaling a Flask App with ReplicaSets](./Exercises/3-Minikube-Scaling-Flask-App-with-Replicasets) | ReplicaSets and scaling on Minikube | Pending |
-| 4  | [Docker Networking](./Exercises/4-Docker-Networking) | Docker network types and container communication | Pending |
-| 5  | [Docker Security with AppArmor](./Exercises/5-Docker-Security-AppArmor) | Flask app, custom AppArmor profile, Docker SDK for Python | Pending |
-| 6  | [Grafana Real-time Monitoring of a Quick Commerce App](./Exercises/6-Grafana-Realtime-Monitoring-of-Quick-Commerce-App) | Real-time monitoring and dashboards with Grafana | Pending |
-| 7  | [Jenkins CI Automation](./Exercises/7-Jenkins-CI-Automation) | Jenkins running in Docker, CI automation | Pending |
-| 8  | [Jenkins Hello World Job](./Exercises/8-Jenkins-Hello-World-Job) | Creating and running a basic Jenkins job | Pending |
-| 9  | [Jenkins Multi-Stage Pipeline](./Exercises/9-Jenkins-Multi-Stage-Pipeline) | Multi-stage Jenkins pipeline | Pending |
-| 10 | [Multi-Node, Multi-App Minikube Deployment](./Exercises/10-Minikube-Multi-Node-Multi-App-Minikube-Deployment) | Multi-node Minikube cluster with multiple applications | Pending |
+## Lab Execution Track & Progress
 
-## How to Use This Repository
+| Module # | Exercise Name | Core Technical Focus | Implementation Status |
+| :---: | :--- | :--- | :---: |
+| **01** | [Kubernetes Getting Started](./Exercises/1-Kubernetes-Getting-Started) | Cluster initialization, Pod deployment, and NodePort routing | `COMPLETED` |
+| **02** | [Minikube, kubectl & Flask](./Exercises/2-Minikube-Kubectl-Flask) | Declarative deployments, container runtime, and microservices | `PENDING` |
+| **03** | [Flask Scaling via ReplicaSets](./Exercises/3-Minikube-Scaling-Flask-App-with-Replicasets) | High availability, Pod replication, and fault recovery | `PENDING` |
+| **04** | [Docker Network Topologies](./Exercises/4-Docker-Networking) | User-defined bridge drivers, DNS resolution, and isolation | `PENDING` |
+| **05** | [Container Hardening via AppArmor](./Exercises/5-Docker-Security-AppArmor) | Least privilege enforcement, security profiles, Python SDK | `PENDING` |
+| **06** | [Real-Time Monitoring with Grafana](./Exercises/6-Grafana-Realtime-Monitoring-of-Quick-Commerce-App) | Prometheus time-series scraping, alert thresholds, dashboards | `PENDING` |
+| **07** | [Automated CI Pipelines with Jenkins](./Exercises/7-Jenkins-CI-Automation) | Containerized Jenkins master, polling, build webhooks | `PENDING` |
+| **08** | [Jenkins Freestyle Workflows](./Exercises/8-Jenkins-Hello-World-Job) | Build tasks, shell triggers, build history & artifacts | `PENDING` |
+| **09** | [Multi-Stage Enterprise CI Pipelines](./Exercises/9-Jenkins-Multi-Stage-Pipeline) | Declarative Jenkinsfile, automated testing with pytest, staging | `PENDING` |
+| **10** | [Multi-Node Microservices Topology](./Exercises/10-Minikube-Multi-Node-Multi-App-Minikube-Deployment) | Cluster topologies, inter-service communication, ingress routing | `PENDING` |
 
-1. Open the `Exercises` folder and pick an exercise.
-2. Read its `README.md` for the objective and implementation details.
-3. Review the commands and configuration used.
-4. Check the verification steps and results.
-5. Refer to the screenshots included in the exercise folder.
+---
 
-## Documentation Approach
+## Technology Ecosystem
 
-The documentation focuses on **my completed implementation** rather than reproducing the original lab instructions. Where an exercise requires practical execution, screenshots are included to demonstrate the result.
+- **Orchestration & Virtualization**: Kubernetes, Minikube, Docker Engine, Docker Desktop
+- **Microservices & Programming**: Python 3 (Flask, Docker SDK, Pytest)
+- **CI/CD & Automation**: Jenkins (Freestyle jobs, Declarative Pipelines, Webhooks)
+- **Observability & Metrics**: Prometheus Time-Series DB, Grafana Visualization Engine
+- **Kernel Security**: Linux AppArmor Profiles, Capabilities filtering (`--cap-drop`)
+- **Version Control**: Git, GitHub Actions
 
-## Technologies
+---
 
-* Docker, Docker Networking, Docker Security (AppArmor)
-* Python (Flask, Docker SDK for Python)
-* Kubernetes, Minikube, kubectl
-* Grafana
-* Jenkins (jobs and multi-stage pipelines)
-* Git & GitHub
+## Documentation Standards
 
-The specific technologies used for each exercise are documented in its respective folder.
-
-## Note
-
-This repository is maintained as part of my **DevOps Lab coursework**. The `Exercises` directory contains the individual practical exercises, while this README provides the overall context and navigation.
+Each exercise directory contains:
+- A technical **`README.md`** detailing theoretical architecture, CLI instructions, and output analyses.
+- Source manifests (`Dockerfile`, `*.yaml`, `Jenkinsfile`, Python sources).
+- An evidence catalog in `screenshots/` validating end-to-end operational execution.
